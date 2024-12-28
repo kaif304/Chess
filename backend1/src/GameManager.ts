@@ -4,8 +4,8 @@ import { Game } from "./Game";
 
 export class GameManager{
     private games: Game[];
-    private pendingUser: WebSocket | null; // first person who is sending request to start the game
-    private users: WebSocket[]; // list of all the active users
+    private pendingUser: WebSocket | null;
+    private users: WebSocket[];
 
     constructor (){
         this.games = [];
